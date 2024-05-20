@@ -93,6 +93,22 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
+            <div className="relative md:max-w-xl">
+              <img
+                src="/your-image.png"
+                alt="image"
+                className="absolute w-40 lg:w-52 right-56 -top-20 select-none hidden sm:block lg:hidden xl:block "
+              />
+              <img
+                src="/line.png"
+                alt="line"
+                className="absolute w-20 -left-6 -bottom-6 select-none"
+              />
+              <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
+            </div>
+          </div>
         </MaxWidthWrapper>
       </section>
 
@@ -125,13 +141,13 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &ldquo;The case feels durable and I even got a compliment on
+                  &quot;The case feels durable and I even got a compliment on
                   the design. Had the case for two and a half months now and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the image is super clear
                   </span>
                   , on the case I had before, the image started fading into
-                  yellow-ish color after a couple weeks. Love it.&ldquo;
+                  yellow-ish color after a couple weeks. Love it.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -161,14 +177,14 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &ldquo;I usually keep my phone together with my keys in my
+                  &quot;I usually keep my phone together with my keys in my
                   pocket and that led to some pretty heavy scratchmarks on all
                   of my last phone cases. This one, besides a barely noticeable
                   scratch on the corner,{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     looks brand new after about half a year
                   </span>
-                  . I dig it.&ldquo;
+                  . I dig it.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -189,9 +205,9 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
 
-        <div className="pt-16">
+        {/* <div className="pt-16">
           <Reviews />
-        </div>
+        </div> */}
       </section>
 
       <section>
