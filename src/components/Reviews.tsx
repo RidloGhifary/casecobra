@@ -64,7 +64,8 @@ function ReviewColumn({
     <div
       ref={columnRef}
       className={cn("animate-marquee space-y-8 py-4", className)}
-      style={{ "--marquee-duration": duration } as React.CSSProperties}>
+      style={{ "--marquee-duration": duration } as React.CSSProperties}
+    >
       {reviews.concat(reviews).map((imgSrc, reviewIndex) => (
         <Review
           key={reviewIndex}
@@ -99,10 +100,11 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
     <div
       className={cn(
         "animate-fade-in rounded-[2.25rem] bg-white p-6 opacity-0 shadow-xl shadow-slate-900/5",
-        className
+        className,
       )}
       style={{ animationDelay }}
-      {...props}>
+      {...props}
+    >
       <Phone imgSrc={imgSrc} />
     </div>
   );
@@ -119,7 +121,8 @@ function ReviewGrid() {
   return (
     <div
       ref={containerRef}
-      className="relative -mx-4 mt-16 grid h-[49rem] max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
+      className="relative -mx-4 mt-16 grid h-[49rem] max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
+    >
       {isInView ? (
         <>
           <ReviewColumn
@@ -160,7 +163,7 @@ export function Reviews() {
         aria-hidden="true"
         alt="what-people-are-buying"
         src="/what-people-are-buying.png"
-        className="absolute select-none hidden xl:block -left-32 top-1/3"
+        className="absolute -left-32 top-1/3 hidden select-none xl:block"
       />
 
       <ReviewGrid />
